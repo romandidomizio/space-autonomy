@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+plotly
+langgraph
+langchain
+llama-index
+chromadb
+scikit-learn
+fastapi
+uvicorn
