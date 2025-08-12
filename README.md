@@ -44,6 +44,7 @@ This project is structured into distinct phases, each delivering a key capabilit
 
 -   [X] **Phase 0: Setup & Scaffolding**
     -   *Outcome*: Project structure, virtual environment, and all dependencies are in place.
+    -   *Status*: ✅ Complete - GMAT installed, enterprise directory structure established
 
 -   [ ] **Phase 1: Baseline Trajectory Simulation (Weeks 1-2)**
     -   *Goal*: Simulate and visualize a baseline Earth-to-Mars Hohmann transfer using GMAT.
@@ -85,6 +86,28 @@ Beyond the core roadmap, AegisNav is designed to be extensible. The following ad
 | **High-Fidelity Simulation**    | `SPICE Toolkit` (NASA)       | To add precision spacecraft orientation, instrument timing, and ephemeris data for more realistic mission simulation. |
 | **Explainable AI (XAI)**        | `SHAP`                       | To provide deep, quantitative insights into *why* the anomaly detection model flagged a specific deviation. |
 | **3D Mission Visualization**    | `Unreal Engine`/`Omniverse`  | To create a visually stunning, high-fidelity digital twin of the mission, ideal for presentations and demonstrations. |
+
+## 📊 Benchmarking & Validation
+
+AegisNav is designed to demonstrate quantifiable improvements over traditional trajectory planning methods. Our benchmarking approach includes:
+
+### Baseline Comparisons
+1. **Static Hohmann Transfer**: Basic two-impulse transfer (control group)
+2. **GMAT-Optimized Transfer**: Best possible trajectory using GMAT's built-in optimization
+3. **Real Mission Reference**: Mars Science Laboratory (MSL/Curiosity) trajectory data
+   - Launch: November 26, 2011
+   - Mars arrival: August 5, 2012
+   - Total delta-v: ~6.1 km/s
+   - Flight time: ~253 days
+
+### Performance Metrics
+- **Fuel Efficiency**: Total delta-v required (km/s)
+- **Time Optimization**: Transfer duration (days)
+- **Anomaly Response**: Recovery time from simulated deviations (hours)
+- **Robustness**: Success rate under various failure scenarios (%)
+
+### Success Criteria
+The agentic system must demonstrably outperform baseline methods in at least 2-3 key metrics while maintaining mission safety constraints.
 
 ## ⚙️ Getting Started
 

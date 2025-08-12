@@ -134,23 +134,26 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Virtual Environment
 venv/
 .venv/
 env/
 .env
 
-# GMAT Source Code (external dependency)
+# External Repositories (Reference Material)
 gmat-git/
 
 # IDE / Editor
 .vscode/
-.idea/k/
-venv.bak/
+.idea/
 
 # Spyder project settings
 .spyderproject
 .spyproject
+
+# Environments
+ENV/
+env.bak/
 
 # Rope project settings
 .ropeproject
