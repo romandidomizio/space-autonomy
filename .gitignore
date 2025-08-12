@@ -135,13 +135,17 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.envrc
-.venv
-env/
 venv/
-ENV/
-env.bak/
+.venv/
+env/
+.env
+
+# GMAT Source Code (external dependency)
+gmat-git/
+
+# IDE / Editor
+.vscode/
+.idea/k/
 venv.bak/
 
 # Spyder project settings
