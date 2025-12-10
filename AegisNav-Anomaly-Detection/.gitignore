@@ -27,10 +27,7 @@ wheels/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# Data files (too large for git)
-data/
-*.csv
-*.npy
+# Large data files (keep small datasets like P-10.npy)
 *.h5
 *.hdf5
 *.nc
